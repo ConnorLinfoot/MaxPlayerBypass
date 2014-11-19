@@ -1,0 +1,8 @@
+name: CustomPlayerCount
+description: CustomPlayerCount
+main: com.connorlinfoot.maxplayerbypass.MaxPlayerBypass
+version: 1.0-SNAPSHOT
+authors: [Connor Linfoot]
+commands:
+  mpb:
+    description: MaxPlayerBypass command
