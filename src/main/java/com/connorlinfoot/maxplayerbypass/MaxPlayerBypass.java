@@ -2,6 +2,7 @@ package com.connorlinfoot.maxplayerbypass;
 
 import com.connorlinfoot.maxplayerbypass.Commands.MPBCommand;
 import com.connorlinfoot.maxplayerbypass.Listeners.Ping;
+import com.connorlinfoot.maxplayerbypass.Listeners.PlayerLogin;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Server;
@@ -60,6 +61,7 @@ public class MaxPlayerBypass extends JavaPlugin {
     private void registerEvents(ConsoleCommandSender console) {
         PluginManager pluginManager = Bukkit.getPluginManager();
         pluginManager.registerEvents(new Ping(), this);
+        pluginManager.registerEvents(new PlayerLogin(), this);
         console.sendMessage(Prefix + "Events have been registered");
     }
 
